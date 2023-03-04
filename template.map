@@ -1,2 +1,4 @@
 maxx 5000
-belt 0 5000 0 0 2 50 balloon
+platform 5000 5000 0 balloon
+belt 0 4999 0 0 2 50 balloon
+door 1 5000 0 0 -1 .ogg .ogg .ogg .ogg 2

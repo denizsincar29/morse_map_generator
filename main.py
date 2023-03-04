@@ -1,6 +1,7 @@
 import os
 import json
-with open("template.map", "r", encoding="UTF-8") as f: t=f.read()
+speed=input("enter speed of morse code. the lower the value, the faster is morse code. 50 is ok")
+with open("template.map", "r", encoding="UTF-8") as f: t=f.read().format(speed)
 with open("morse.json", "r", encoding="UTF-8") as f: morse=json.loads(f.read())
 try: os.remove("result.map")
 except: pass

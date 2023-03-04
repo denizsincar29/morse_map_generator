@@ -9,7 +9,7 @@ text=input("enter text that should be morse coded")
 i=20
 with open("result.map", "a", encoding="UTF-8") as f:
 	f.write(t)
-	t="ambience {} {} 0 5 alarm15.ogg 0 100\n"
+	t="ambience {} {} 0 5 loop_marker_tone660.ogg 0 100\n"
 	for char in text:
 		try: c=morse[char]
 		except KeyError: c=" "
